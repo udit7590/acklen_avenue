@@ -5,6 +5,7 @@
 * `rails generate rspec:install`
 
 ### Gitpod
+Prebuild using the following URL:
 * https://gitpod.io/#prebuild/https://github.com/udit7590/acklen
 
 ### Configure
