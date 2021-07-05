@@ -10,13 +10,19 @@ ports:
     onOpen: ignore
 
 tasks:
-  - init: >
+  - name: Rails Server
+    init: >
       bundle install &&
       yarn install &&
       rails db:create &&
-      rails db:migrate
+      rails db:migrate &&
+      gp sync-done bundle_migration_init
     command: >
       rails server -b 0.0.0.0
+  - name: Tests
+    init: gp sync-await bundle_migration_init
+    command: >
+      bundle exec rspec spec
 
 github:
   prebuilds:
