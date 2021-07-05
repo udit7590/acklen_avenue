@@ -67,6 +67,4 @@ RSpec.configure do |config|
   # config.filter_gems_from_backtrace("gem name")
 
   config.shared_context_metadata_behavior = :apply_to_host_groups
-
-  config.include DeviseSpecHelpers, type: :request
 end
