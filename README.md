@@ -6,7 +6,7 @@
 
 ### Gitpod
 Prebuild using the following URL:
-* https://gitpod.io/#prebuild/https://github.com/udit7590/acklen
+* https://gitpod.io/#prebuild/https://github.com/udit7590/acklen_avenue
 
 ### Configure
 * `bundle install`
